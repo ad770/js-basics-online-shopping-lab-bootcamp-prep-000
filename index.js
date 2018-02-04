@@ -19,21 +19,28 @@ function addToCart(item) {
 
 function viewCart() {
 
+  switch (cart.length) {
+    case 0:
+
+    break;
+    case 1:
+    
+    break;
+    case 2:
+    
+    break;
+    case > 2:
+    
+    break;
+    default:
+}
   if (cart.length < 1) {
     console.log('Your shopping cart is empty.');
-  }else{
+  }else if{cart.le
     var result = 'In your cart, you have';
     var key = [];
     for (var i = 0; i < cart.length; i++) {
       key = Object.keys(cart[i])[0]
-
-      
-
-
-
-
-
-
 
       if(i < cart.length-1){
         if (cart.length = 2) {
