@@ -21,17 +21,18 @@ function viewCart() {
 
   switch (cart.length) {
     case 0:
-
-    break;
+      console.log('Your shopping cart is empty.');
+      break;
     case 1:
-    
-    break;
+      key = Object.keys(cart[0])[0]
+      console.log(`In your cart, you have ${key} at $${cart[0][key]}`;);
+      break;
     case 2:
-    
-    break;
+
+      break;
     case > 2:
-    
-    break;
+
+      break;
     default:
 }
   if (cart.length < 1) {
