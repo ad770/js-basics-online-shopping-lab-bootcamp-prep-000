@@ -19,20 +19,20 @@ function addToCart(item) {
 
 function viewCart() {
   result = '';
-  switch (cart.length) {
-    case 0:
+  switch (true) {
+    case (cart.length === 0):
       result = 'Your shopping cart is empty.';
       break;
-    case 1:
+    case (cart.length === 1):
       var key = Object.keys(cart[0])[0];
       result = `In your cart, you have ${key} at $${cart[0][key]}.`;
       break;
-    case 2:
+    case (cart.length === 2):
       var key0 = Object.keys(cart[0])[0];
       var key1 = Object.keys(cart[1])[0];
       result = `In your cart, you have ${key0} at $${cart[0][key0]} and ${key1} at $${cart[1][key1]}.`;
       break;
-    case 3:
+    case (cart.length > 2):
       var result = 'In your cart, you have';
       var key = [];
       for (var i = 0; i < cart.length; i++) {
