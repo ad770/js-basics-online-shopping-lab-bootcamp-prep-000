@@ -51,7 +51,7 @@ console.log(result);
 
 // addToCart('bananos');
 // addToCart('g');
-// addToCart('j');
+addToCart('j');
 addToCart('apples');
 viewCart();
 
