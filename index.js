@@ -39,10 +39,8 @@ function viewCart() {
         key = Object.keys(cart[i])[0];
         if(i < cart.length-1){
           result +=` ${key} at $${cart[i][key]},`;
-        }else if(cart.length>1){
+        }else{
           result +=` and ${key} at $${cart[i][key]}.`;
-        }else {
-          result +=` ${key} at $${cart[i][key]}.`;
         }
       }
       break;
