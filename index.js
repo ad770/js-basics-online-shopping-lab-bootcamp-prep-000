@@ -54,7 +54,7 @@ console.log(result);
 // addToCart('bananos');
 // addToCart('g');
 // addToCart('j');
-// addToCart('apples');
+addToCart('apples');
 viewCart();
 
 function total() {
