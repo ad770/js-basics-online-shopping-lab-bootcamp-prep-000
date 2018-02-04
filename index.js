@@ -46,7 +46,7 @@ function viewCart() {
       break;
     default:
   }
-console.log(result);
+  console.log(result);
 }
 
 // addToCart('bananos');
