@@ -18,45 +18,35 @@ function addToCart(item) {
 }
 
 function viewCart() {
-
+  result = '';
   switch (cart.length) {
     case 0:
-      console.log('Your shopping cart is empty.');
+      result = 'Your shopping cart is empty.';
       break;
     case 1:
-      key = Object.keys(cart[0])[0]
-      console.log(`In your cart, you have ${key} at $${cart[0][key]}`;);
+      var key = Object.keys(cart[0])[0];
+      result = `In your cart, you have ${key} at $${cart[0][key]}`;
       break;
     case 2:
-
+      var key0 = Object.keys(cart[0])[0];
+      var key1 = Object.keys(cart[1])[0];
+      result = `In your cart, you have ${key0} at $${cart[0][key]} and ${key0} at $${cart[1][key1]}.`;
       break;
     case > 2:
-
+      var result = 'In your cart, you have';
+      var key = [];
+      for (var i = 0; i < cart.length; i++) {
+        key = Object.keys(cart[i])[0];
+        if(i < cart.length-1){
+          result +=` ${key} at $${cart[i][key]},`;
+        }else if(cart.length>1){
+          result +=` and ${key} at $${cart[i][key]}.`;
+        }else {
+          result +=` ${key} at $${cart[i][key]}.`;
       break;
     default:
-}
-  if (cart.length < 1) {
-    console.log('Your shopping cart is empty.');
-  }else if{cart.le
-    var result = 'In your cart, you have';
-    var key = [];
-    for (var i = 0; i < cart.length; i++) {
-      key = Object.keys(cart[i])[0]
-
-      if(i < cart.length-1){
-        if (cart.length = 2) {
-          result +=` ${key} at $${cart[i][key]}`;
-        }else{
-          result +=` ${key} at $${cart[i][key]},`;
-        }
-      }else if(cart.length>1){
-        result +=` and ${key} at $${cart[i][key]}.`;
-      }else {
-        result +=` ${key} at $${cart[i][key]}.`;
-      }
-    }
-    console.log(result);
   }
+console.log(result);
 }
 
 // addToCart('bananos');
