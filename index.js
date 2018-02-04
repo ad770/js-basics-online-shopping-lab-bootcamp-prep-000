@@ -50,9 +50,9 @@ function viewCart() {
 }
 
 // addToCart('bananos');
-addToCart('g');
-addToCart('j');
-addToCart('apples');
+// addToCart('g');
+// addToCart('j');
+// addToCart('apples');
 viewCart();
 
 function total() {
