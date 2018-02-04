@@ -56,7 +56,7 @@ function viewCart() {
 viewCart();
 
 function total() {
-  result = 0;
+  var result = 0;
   for (var i = 0; i < cart.length; i++) {
     result += cart[i][Object.keys(cart[i])[0]];
   }
