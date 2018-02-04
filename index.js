@@ -18,7 +18,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  result = '';
+  var result = '';
   switch (true) {
     case (cart.length === 0):
       result = 'Your shopping cart is empty.';
