@@ -56,7 +56,11 @@ function viewCart() {
 viewCart();
 
 function total() {
-  // write your code here
+  result = 0;
+  for (var i = 0; i < cart.length; i++) {
+    result += cart[i][Object.keys(cart[i])[0]];
+  }
+  return result;
 }
 
 function removeFromCart(item) {
