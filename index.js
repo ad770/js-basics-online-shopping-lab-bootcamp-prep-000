@@ -25,7 +25,7 @@ function viewCart() {
       break;
     case 1:
       var key = Object.keys(cart[0])[0];
-      result = `In your cart, you have ${key} at $${cart[0][key]}`;
+      result = `In your cart, you have ${key} at $${cart[0][key]}.`;
       break;
     case 2:
       var key0 = Object.keys(cart[0])[0];
