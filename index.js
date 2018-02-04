@@ -34,7 +34,7 @@ function viewCart() {
       break;
     case (cart.length > 2):
       var result = 'In your cart, you have';
-      var key = [];
+      var key;
       for (var i = 0; i < cart.length; i++) {
         key = Object.keys(cart[i])[0];
         if(i < cart.length-1){
