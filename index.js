@@ -49,12 +49,6 @@ function viewCart() {
   console.log(result);
 }
 
-// addToCart('bananos');
-// addToCart('g');
-// addToCart('j');
-// addToCart('apples');
-viewCart();
-
 function total() {
   var result = 0;
   for (var i = 0; i < cart.length; i++) {
@@ -70,6 +64,13 @@ function removeFromCart(item) {
     }
   }
 }
+
+addToCart('bananos');
+addToCart('g');
+addToCart('j');
+removeFromCart('g')
+addToCart('apples');
+viewCart();
 
 function placeOrder(cardNumber) {
   // write your code here
