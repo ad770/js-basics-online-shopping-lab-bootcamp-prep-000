@@ -69,7 +69,7 @@ addToCart('bananos');
 addToCart('g');
 addToCart('j');
 addToCart('apples');
-removeFromCart('g');
+removeFromCart('j');
 viewCart();
 
 function placeOrder(cardNumber) {
