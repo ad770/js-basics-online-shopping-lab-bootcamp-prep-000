@@ -64,6 +64,7 @@ function removeFromCart(item) {
       console.log(i);
     }
   }
+  return cart;
 }
 
 // addToCart('a');
