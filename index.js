@@ -66,11 +66,11 @@ function removeFromCart(item) {
   }
 }
 
-addToCart('bananos');
-addToCart('g');
-addToCart('j');
-addToCart('apples');
-removeFromCart('apples');
+addToCart('a');
+addToCart('b');
+addToCart('c');
+addToCart('d');
+removeFromCart('d');
 viewCart();
 
 function placeOrder(cardNumber) {
