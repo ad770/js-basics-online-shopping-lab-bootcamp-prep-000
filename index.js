@@ -70,7 +70,7 @@ addToCart('a');
 addToCart('b');
 addToCart('c');
 addToCart('d');
-removeFromCart('d');
+removeFromCart('b');
 viewCart();
 
 function placeOrder(cardNumber) {
