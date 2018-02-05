@@ -66,12 +66,12 @@ function removeFromCart(item) {
   }
 }
 
-addToCart('a');
-addToCart('b');
-addToCart('c');
-addToCart('d');
-removeFromCart('b');
-viewCart();
+// addToCart('a');
+// addToCart('b');
+// addToCart('c');
+// addToCart('d');
+// removeFromCart('b');
+// viewCart();
 
 function placeOrder(cardNumber) {
   // write your code here
