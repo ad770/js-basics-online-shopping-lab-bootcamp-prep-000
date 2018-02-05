@@ -58,11 +58,16 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var failer = false;
   for (var i = 0; i < cart.length; i++) {
     if (item === Object.keys(cart[i])[0]) {
       cart.splice(i, 1);
       console.log(i);
+      failer = true;
     }
+  }
+  if(failer){
+    console.log('That item is not in your cart.');
   }
 }
 
