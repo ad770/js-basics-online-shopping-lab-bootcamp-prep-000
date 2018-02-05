@@ -68,7 +68,7 @@ function removeFromCart(item) {
 addToCart('bananos');
 addToCart('g');
 addToCart('j');
-removeFromCart('g')
+removeFromCart('g');
 addToCart('apples');
 viewCart();
 
