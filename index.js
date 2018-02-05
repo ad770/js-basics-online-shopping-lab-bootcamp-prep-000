@@ -68,8 +68,8 @@ function removeFromCart(item) {
 addToCart('bananos');
 addToCart('g');
 addToCart('j');
-removeFromCart('g');
 addToCart('apples');
+removeFromCart('g');
 viewCart();
 
 function placeOrder(cardNumber) {
