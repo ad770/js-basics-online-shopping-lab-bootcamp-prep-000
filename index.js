@@ -71,14 +71,14 @@ function removeFromCart(item) {
   }
 }
 
+function placeOrder(cardNumber) {
+  // write your code here
+
+}
+
 // addToCart('a');
 // addToCart('b');
 // addToCart('c');
 // addToCart('d');
 // removeFromCart('b');
 // viewCart();
-
-function placeOrder(cardNumber) {
-  // write your code here
-
-}
