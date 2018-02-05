@@ -58,12 +58,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var failer = false;
+  var failer = true;
   for (var i = 0; i < cart.length; i++) {
     if (item === Object.keys(cart[i])[0]) {
       cart.splice(i, 1);
       console.log(i);
-      failer = true;
+      failer = false;
     }
   }
   if(failer){
